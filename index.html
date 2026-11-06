@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rozanne Angeles | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Rozanne Angeles</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">Aspiring Frontend Developer</p>
+        <h1>Hi, I'm Ma. Rozanne DG. Angeles.</h1>
+        <p class="hero-desc">I'm a 3rd year BSIT student who enjoys building simple, clean, and responsive web pages.</p>
+        <a href="#contact" class="btn">Contact me</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <h2>About</h2>
+        <p>I'm a 3rd year BSIT student from Bulacan State University. I'm learning web development and I like working on the visual side of websites, such as layouts, colors, and how a page looks on different screens.</p>
+        <p>I'm currently learning React.js to build more interactive pages. My goal is to become a frontend developer.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>HTML &amp; CSS</h3>
+            <p>Writing clean page structure and styling it with Flexbox and Grid.</p>
+          </article>
+          <article class="card">
+            <h3>Responsive Design</h3>
+            <p>Making pages fit desktop, tablet, and mobile screens.</p>
+          </article>
+          <article class="card">
+            <h3>JavaScript Basics</h3>
+            <p>Adding simple interactions like menus and forms.</p>
+          </article>
+          <article class="card">
+            <h3>React.js</h3>
+            <p>Learning to build reusable components for web pages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>Feel free to send me a message.</p>
+          <ul class="contact-list">
+            <li><strong>Email</strong> marozanneangeles@gmail.com</li>
+          </ul>
+        </div>
+        <form class="form" action="#" onsubmit="event.preventDefault(); this.reset(); document.getElementById('sent').hidden = false;">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="4" required></textarea>
+          <button class="btn" type="submit">Send</button>
+          <p id="sent" class="sent" hidden>Message sent. Thank you!</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Ma. Rozanne DG. Angeles</p>
+    </div>
+  </footer>
+
+</body>
+</html>
